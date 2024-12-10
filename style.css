@@ -1,0 +1,96 @@
+/* General Styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.game-container {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  background: #1e1e1e;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Player Ball */
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #4caf50;
+  border-radius: 50%;
+  top: 180px;
+  left: 180px;
+}
+
+/* Goal */
+#goal {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background: gold;
+  border-radius: 50%;
+}
+
+/* Obstacles */
+.obstacle {
+  position: absolute;
+  width: 100px;
+  height: 10px;
+  background: red;
+}
+
+/* Level Display */
+#level-display,
+#status-message {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Restart Button */
+#restart-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#restart-btn:hover {
+  background: #45a049;
+}
+
+/* Mobile Controls */
+.controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 1.2rem;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background: #45a049;
+}
